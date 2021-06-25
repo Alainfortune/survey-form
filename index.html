@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">ALAIN FORTUNE BREWERY COMPANY</h1>
+      <p id="description" class="description text-center">
+        Thank you for taking the time to help us improve our company
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Whats your favourite fruit drink ?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>select product</option>
+          <option value="student">fanta</option>
+          <option value="job">orange</option>
+          <option value="learner">pineaple</option>
+          <option value="preferNo">apple</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend our product to a friend?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>What is your favorite alcoholic drink?</p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="castel">castel</option>
+          <option value="export">export</option>
+          <option value="booster">booster</option>
+          <option value="mutzig">mutzig</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>What would you like to see improved?</p>
+
+        <label
+          ><input
+            name="prefer"
+            value="sales services"
+            type="checkbox"
+            class="input-checkbox"
+          />sales services</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="sweet drinks"
+            type="checkbox"
+            class="input-checkbox"
+          />sweet drinks</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="alcoholic drinks"
+            type="checkbox"
+            class="input-checkbox"
+          />alcoholic drinks</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="advert services"
+            type="checkbox"
+            class="input-checkbox"
+          />advert services</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="aid-project services"
+            type="checkbox"
+            class="input-checkbox"
+          />free services</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="producer-customer communication"
+            type="checkbox"
+            class="input-checkbox"
+          />producer-customer communication</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="price"
+            type="checkbox"
+            class="input-checkbox"
+          />price</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="quantity"
+            type="checkbox"
+            class="input-checkbox"
+          />quantity</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="sales-site"
+            type="checkbox"
+            class="input-checkbox"
+          />sales-site</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="forum"
+            type="checkbox"
+            class="input-checkbox"
+          />quality</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="additional-product"
+            type="checkbox"
+            class="input-checkbox"
+          />Additional-product</label
+        >
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</html>
